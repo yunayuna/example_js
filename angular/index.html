@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app = 'App'>
+  <head>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+     <script type="text/javascript" src="controller.js"></script>
+     <link rel="stylesheet" href="css.css" type="text/css" />
+     <meta charset="UTF-8">
+  </head>
+  <body ng-controller="AppController">
+    <div class="acordion">
+      <h2 class="acordion__title" ng-click="flag = !flag">アコーディオン</h2>
+      <ul class="acordion__content" ng-class="{active: flag}">
+        <li class="acordion__content__list">angularJSTEST</li>
+        <li class="acordion__content__list">angularJSTEST</li>
+        <li class="acordion__content__list">angularJSTEST</li>
+        <li class="acordion__content__list">angularJSTEST</li>
+        <li class="acordion__content__list">angularJSTEST</li>
+      </ul>
+    </div>
+  </body>
+</html>

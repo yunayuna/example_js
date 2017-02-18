@@ -1,0 +1,31 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.acordion{
+  width: 400px;
+  margin: 0 auto;
+}
+.acordion__title{
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  margin:10px 0;
+}
+.acordion__content__list{
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.acordion__content{
+  overflow: hidden;
+  height: 0;
+  -webkit-transition:all linear .5s;
+  transition:all linear .5s;
+}
+.acordion__content.active{
+  height: 300px;
+  -webkit-transition:all linear .5s;
+  transition:all linear .5s;
+}
